@@ -17,14 +17,14 @@ def scatter(x, y, z, c='black', **kwargs):
     ax = plt.gca(projection='3d')
     ax.scatter(x, y, z, c=c, **kwargs)
 
-def xlabel(label):
+def xlabel(label, **kwargs):
     ax = plt.gca(projection='3d')
-    ax.set_xlabel(label)
+    ax.set_xlabel(label, **kwargs)
 
-def ylabel(label):
+def ylabel(label, **kwargs):
     ax = plt.gca(projection='3d')
-    ax.set_ylabel(label)
+    ax.set_ylabel(label, **kwargs)
 
-def zlabel(label):
+def zlabel(label, **kwargs):
     ax = plt.gca(projection='3d')
-    ax.set_zlabel(label)
+    ax.set_zlabel(label, **kwargs)
