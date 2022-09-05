@@ -3,5 +3,5 @@ This repository contains utility functions that I always find myself rewriting a
 The tools included enable the following:
 
 1. [Assembling gifs from Matplotlib figures](gif/)
-2. Printing 2D arrays as LaTeX matrices
-3. Plotting surfaces and point clouds in 3D
+2. [Printing 2D arrays as LaTeX matrices](matrix/)
+3. [Plotting surfaces and point clouds in 3D](plot3d/)
