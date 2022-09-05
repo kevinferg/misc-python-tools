@@ -42,4 +42,4 @@ gif.export("wave.gif", fps=30)
 
 This produces the following animation:
 
-![wave.gif](wave.gif)
+![wave.gif](../examples/wave.gif)

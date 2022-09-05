@@ -25,7 +25,7 @@ x, y = np.meshgrid(vals, vals)
 z = np.cos(8*x) + np.sin(10*y)
 
 # Create a 3D figure
-plot3d.figure(dpi=80)
+plot3d.figure(figsize=(6,4.5), dpi=80)
 plt.subplots_adjust(left=0, right=1, bottom=0, top=1)
 
 # Make a surface plot
@@ -42,4 +42,4 @@ plt.close()
 
 This produces the following figure:
 
-![surface.png](surface.png)
+![surface.png](../examples/surface.png)
