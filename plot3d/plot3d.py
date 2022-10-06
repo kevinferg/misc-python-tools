@@ -17,6 +17,7 @@ def scatter(x, y, z, c='black', **kwargs):
     ax = plt.gca(projection='3d')
     ax.scatter(x, y, z, c=c, **kwargs)
 
+    
 def xlabel(label, **kwargs):
     ax = plt.gca(projection='3d')
     ax.set_xlabel(label, **kwargs)
@@ -28,3 +29,16 @@ def ylabel(label, **kwargs):
 def zlabel(label, **kwargs):
     ax = plt.gca(projection='3d')
     ax.set_zlabel(label, **kwargs)
+
+    
+def xlim(lims, **kwargs):
+    ax = plt.gca(projection='3d')
+    ax.set_xlim(lims, **kwargs)
+
+def ylim(lims, **kwargs):
+    ax = plt.gca(projection='3d')
+    ax.set_ylim(lims, **kwargs)
+
+def zlim(lims, **kwargs):
+    ax = plt.gca(projection='3d')
+    ax.set_zlim(lims, **kwargs)
