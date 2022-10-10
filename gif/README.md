@@ -26,17 +26,17 @@ def plot_wave(period, amplitude, phase):
 
 
 # Create a gif
-gif = gif.Gif()
+wave_gif = gif.Gif()
 
 phis = np.arange(0, np.pi, np.pi/30)
 for phi in phis:
     plot_wave(period = np.pi, amplitude = 0.5, phase = phi)
     # Add current figure as frame to gif
-    gif.add_frame()
+    wave_gif.add_frame()
     plt.close()
 
 # Export the gif
-gif.export("wave.gif", fps=30)
+wave_gif.export("wave.gif", fps=30)
 
 ```
 
