@@ -6,3 +6,4 @@ The tools included enable the following:
 2. [Printing 2D arrays as LaTeX matrices](matrix/)
 3. [Plotting surfaces and point clouds in 3D](plot3d/)
 4. [Generating "radar charts" in Matplotlib](radar/)
+5. [Interpolate an image to a point cloud](interpolate/)
