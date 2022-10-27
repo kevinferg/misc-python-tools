@@ -6,7 +6,8 @@ This makes 3D plotting marginally more accessible. It uses `Axes3D` from `mpl_to
 
 To make a 3D figure, use `plot3d.figure()`.   
 Then, plot a surface with `plot3d.surf(x, y, z)` or a point cloud with `plot3d.scatter(x, y, z)`.   
-Change axis labels with `plot3d.xlabel()`, `plot3d.ylabel()`, and `plot3d.zlabel()`.
+Change axis labels with `plot3d.xlabel()`, `plot3d.ylabel()`, and `plot3d.zlabel()`.   
+Set axis limits with `plot3d.xlim()`, `plot3d.ylim()`, and `plot3d.zlim()`. Also set all three axes to have the same range with `plot3d.axis_equal()`.
 
 Note that the default axes may not be positioned perfectly, so `matplotlib.pyplot.subplots_adjust` can help.
 
