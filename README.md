@@ -1,4 +1,4 @@
-# Useful Python Tools
+### Miscellaneous Python Tools
 This repository contains utility functions that I always find myself rewriting across different projects, or that I may want to use later on.  
 The tools included enable the following:
 
