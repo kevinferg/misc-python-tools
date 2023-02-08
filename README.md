@@ -7,3 +7,4 @@ The tools included enable the following:
 3. [Plot surfaces and point clouds in 3D](plot3d/)
 4. [Generate "radar charts" in Matplotlib](radar/)
 5. [Interpolate an image to a point cloud](interpolate/)
+6. [Rejection sampling for arbitrary multivariate distributions](sampling/)
