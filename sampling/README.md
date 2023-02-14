@@ -6,7 +6,7 @@ The function `sampling.rejection_sample()` performs [rejection sampling](https:/
 
 
 ## Example
-This example defines a 2D Gaussian function, draws 100 samples from it, and plots them.
+This example defines a 2D Gaussian function, draws 1000 samples from it, and plots them.
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
