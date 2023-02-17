@@ -8,3 +8,4 @@ The tools included enable the following:
 4. [Generate "radar charts" in Matplotlib](radar/)
 5. [Interpolate an image to a point cloud](interpolate/)
 6. [Rejection sampling for arbitrary multivariate distributions](sampling/)
+7. [Draw standard x-y axes with arrows](axes/)
