@@ -1,5 +1,5 @@
 ### Miscellaneous Python Tools
-This repository contains utility functions that I always find myself rewriting across different projects, or that I may want to use later on.  
+This repository contains utility functions that I may want to use later on (usually for data visualization in Matplotlib)...  
 The tools included enable the following:
 
 1. [Assemble gifs from Matplotlib figures](gif/)
@@ -9,3 +9,4 @@ The tools included enable the following:
 5. [Interpolate an image to a point cloud](interpolate/)
 6. [Rejection sampling for arbitrary multivariate distributions](sampling/)
 7. [Draw standard x-y axes with arrows](axes/)
+8. [Create and plot hex grids](hexgrid/)
