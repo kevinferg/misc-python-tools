@@ -33,7 +33,7 @@ def draw_axes(xlim, ylim, reformat=True,
     add_arrow(0., ylim[1], 0., -dy) # Down arrow
 
 
-def label_axes(xlabel=r"$x$", ylabel=r"$y", **kwargs):
+def label_axes(xlabel=r"$x$", ylabel=r"$y$", **kwargs):
     ax = plt.gca()
     xlim = ax.get_xlim()
     ylim = ax.get_ylim()
