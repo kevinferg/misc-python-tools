@@ -40,4 +40,5 @@ class Gif:
     
     def export(self, filename, fps=10):
         """Export a gif to a file (at a specified fps)"""
-        imageio.mimsave(filename, self.frames, fps=fps)
+        duration = len(self.frames) / fps
+        imageio.mimsave(filename, self.frames, duration=duration)
