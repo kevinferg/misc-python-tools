@@ -21,7 +21,7 @@ def theta_space(n, start_angle=np.pi/2, direction="CW"):
     Returns: array of angle values
     """
     dir = -1 if direction == "CW" else 1
-    thetas = start_angle + dir * np.linspace(0, 2*np.pi * np.double(n-1)/np.double(n), np.int(n))
+    thetas = start_angle + dir * np.linspace(0, 2*np.pi * np.double(n-1)/np.double(n), int(n))
     return thetas
 
 def plot_web(rs, thetas, color = "gray", linewidth=0.5, zorder=-1):
@@ -63,19 +63,31 @@ def plot_star(rs, thetas = None, fill=True, color="red"):
                color=color, marker=".", markerfacecolor=color, linewidth=2.5, markersize=15)
     plot_polar(dup_rs, dup_thetas, fill=fill, facecolor=color, alpha=0.2)
     
-def polar_labels(labels, r, thetas = None, **kwargs):
-    """Place automatically-rotated angle data text labels
+def polar_labels(labels, r, thetas = None, rotated=True, **kwargs):
+    """Place angle data text labels around a radar chart
     Arguments:
     - labels: String labels
     - r: Radius at which to place labels
     - thetas: Angle locations (radians) to place labels, defaults to evenly-spaced
+    - rotated: True: rotate labels perpendicular to radial lines. False: leave text horizontal.
     - **kwargs: Additional arguments for plt.text(), e.g. fontsize=18
     """
     if thetas is None:
         thetas = theta_space(len(labels))
 
+    rotation_args = dict(horizontalalignment='center')
+    eps = 1e-4
+    
     for i in range(len((thetas))):
         t = thetas[i] % (2*np.pi)
-        rotation = -90 + t * 180/np.pi + 180 * (t > np.pi)
-        plt.text(r * np.cos(t), r * np.sin(t), labels[i], rotation = rotation,
-                 horizontalalignment='center', verticalalignment='center', **kwargs)
+        if rotated:
+            rotation = -90 + t * 180/np.pi + 180 * (t > np.pi)
+            rotation_args["rotation"] = rotation
+        elif np.cos(t) > eps:
+            rotation_args["horizontalalignment"] = 'left'
+        elif np.cos(t) < -eps:
+            rotation_args["horizontalalignment"] = 'right'
+        else:
+            rotation_args["horizontalalignment"] = 'center'
+        plt.text(r * np.cos(t), r * np.sin(t), labels[i], verticalalignment='center',
+                 **rotation_args, **kwargs)
