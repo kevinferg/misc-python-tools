@@ -9,3 +9,4 @@ The tools included enable the following:
 5. [Interpolate an image to a point cloud](interpolate/)
 6. [Rejection sampling for arbitrary multivariate distributions](sampling/)
 7. [Create and plot hex grids](hexgrid/)
+8. [Trim blank space around the border of an image](crop/)
