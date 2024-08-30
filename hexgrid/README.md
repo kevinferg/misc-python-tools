@@ -2,7 +2,7 @@
 
 ## Description
 
-This module shifts every other column a numpy meshgrid up slightly. There
+This module shifts every other column a numpy meshgrid up slightly to arrange the points in a hexagonal grid.
 
 `x, y = hexgrid.hexgrid(xlim, ylim, ynum)` returns arrays of x- and y-coordinates of hexagon centers.  
 Spans ylim exactly, might go over xlim. ynum is the number of hexagons to stack vertically.  
