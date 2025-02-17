@@ -11,3 +11,4 @@ The tools included enable the following:
 7. [Create and plot hex grids](hexgrid/)
 8. [Trim blank space around the border of an image](crop/)
 9. [Export a Google Colab notebook as a pdf](colabpdf/)
+10. [Remove transparency from a folder of PNG files](opaque/)
