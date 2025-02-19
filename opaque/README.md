@@ -29,3 +29,11 @@ py opacify.py fig dest=opaque
 ```
 py opacify.py fig dest=opaque color=black
 ```
+
+## Requirements
+
+`pillow` must be installed, i.e. using:
+
+```
+pip install pillow
+```
